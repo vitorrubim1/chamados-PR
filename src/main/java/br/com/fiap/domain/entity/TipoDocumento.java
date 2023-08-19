@@ -17,7 +17,6 @@ public class TipoDocumento {
     private String nome;
 
 
-
     public TipoDocumento() {
     }
 
@@ -42,5 +41,10 @@ public class TipoDocumento {
     public TipoDocumento setNome(String nome) {
         this.nome = nome;
         return this;
+    }
+
+    @Override
+    public String toString() {
+        return id + " - " + nome;
     }
 }
